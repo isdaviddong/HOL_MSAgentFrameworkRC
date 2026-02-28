@@ -8,6 +8,7 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.InputEncoding = System.Text.Encoding.UTF8;
 
 // 從環境變數讀取 OpenAI API 金鑰
+// PS:> $env:OPENAI_API_KEY = "你的金鑰"
 var apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY")
     ?? throw new InvalidOperationException("請設置 OPENAI_API_KEY 環境變數。");
 

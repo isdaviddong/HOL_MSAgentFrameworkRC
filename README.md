@@ -1,6 +1,6 @@
 # msagent
 
-一個使用 [Microsoft Agents SDK](https://github.com/microsoft/agents) 與 [OpenAI API](https://platform.openai.com/) 建立的多輪對話命令列聊天機器人。
+一個使用 [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) 與 [OpenAI API](https://platform.openai.com/) 建立的多輪對話命令列聊天機器人。
 
 ## 功能
 
@@ -64,4 +64,6 @@ HelloBot：掰掰！
 
 | 套件 | 版本 |
 |------|------|
-| `Microsoft.Agents.AI.OpenAI` | 1.0.0-rc2 |
+| `Microsoft.Agents.AI.OpenAI` | 1.27.0 |
+
+此版本使用 `GetResponsesClient()` 建立 Responses client，並在 `AsAIAgent(model: "gpt-4.1", ...)` 指定模型。

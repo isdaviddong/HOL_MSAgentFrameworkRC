@@ -14,8 +14,9 @@ var apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY")
 
 // 1) 建立一個 AI Agent，指定使用的模型和角色設定
 var agent = new OpenAIClient(apiKey)
-    .GetResponsesClient("gpt-4.1")
+    .GetResponsesClient()
     .AsAIAgent(
+        model: "gpt-4.1",
         name: "HelloBot",
         instructions: "你是一個友善且樂於助人的聊天機器人，叫做 HelloBot。請用中文回答問題，並且保持對話的連貫性。");
 

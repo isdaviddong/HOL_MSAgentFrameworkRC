@@ -23,6 +23,10 @@
 ```powershell
 $env:OPENAI_API_KEY = "sk-..."
 ```
+or
+```bash
+export OPENAI_API_KEY="sk-..."
+```
 
 **永久設定（寫入使用者環境變數）：**
 

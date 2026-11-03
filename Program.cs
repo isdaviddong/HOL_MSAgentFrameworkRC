@@ -47,7 +47,7 @@ while (true)
     try
     {
         // 4) 每次都把同一個 session 帶入，才能多輪對談
-        var reply = await agent.RunAsync(input, session: session);
+        var reply = await agent.RunAsync(input);
         Console.WriteLine($"\nHelloBot：{reply}");
     }
     catch (Exception ex)
